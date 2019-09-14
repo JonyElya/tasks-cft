@@ -1,0 +1,57 @@
+.task_1_text{
+  color:red;
+}
+.wrapper div {
+  display: block;
+  margin: 20px;
+}
+.warning {
+  width: 20px;
+  height: 10px;
+  background: blue;
+  transform: skew(-30deg);
+}
+.warning:before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 0px solid transparent;
+  border-right: 10px solid transparent;
+   border-bottom: 30px solid blue;
+}
+.warning:after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 30px solid blue;
+} 
+table{
+  border-spacing: 0;
+}
+td{
+  border: 1px solid black;
+  width: 20px;
+}
+tr{
+  border: 1px solid #000;
+  width: 20px;
+  height: 20px;
+}
+tr:nth-child(even) td:nth-child(2){
+   background: linear-gradient(#ffd4aa, #ff7f04);
+}
+tr:nth-child(-2n+3) td:nth-child(4){
+  background-color: #ff0000;
+}
+tr:nth-child(5) td:nth-child(-2n+5){
+  background: url(https://team.cft.ru/assets/img/cft-icons/icon13.svg)  center center no-repeat;
+  background-size: contain;
+}
